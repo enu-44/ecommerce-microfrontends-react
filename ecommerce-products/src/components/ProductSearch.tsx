@@ -22,10 +22,6 @@ export function ProductSearch({ query, handleChange }: ProductSearchProps) {
                 <div className="flex py-3 px-4 rounded-lg text-gray-500 font-semibold cursor-pointer">
                     <span>All Categories
                     </span>
-
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-          </svg> */}
                 </div>
                 <div className="bg-green-400 py-3 px-5 text-white font-semibold rounded-lg hover:shadow-lg transition duration-3000 cursor-pointer">
                     <span >Search</span>
