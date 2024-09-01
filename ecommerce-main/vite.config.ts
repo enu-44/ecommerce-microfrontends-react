@@ -5,6 +5,7 @@ import federation from "@originjs/vite-plugin-federation"
 const { dependencies } = require("./package.json")
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/',
   build: {
     modulePreload: false,
     target: "esnext",

@@ -3,6 +3,7 @@ import { ProductCard } from "./ProductCard";
 import { Product } from "./models/product";
 import {ProductSearch} from "./ProductSearch";
 import { Loader } from "./Loader";
+import { Link } from "react-router-dom";
 
 export function ProductList() {
     const [products, setProducts] = useState<Product[]>([]);
@@ -55,6 +56,11 @@ export function ProductList() {
             loading ?
                 <Loader /> :
                 <section className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+                     <Link to={`test`}>
+                <button type="button" className="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white">
+                Ir a Test
+              </button>
+                </Link>
                 {
                     products.map((product, index) => <ProductCard key={index} index={index} product={product} />)
                 }
